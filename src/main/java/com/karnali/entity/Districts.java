@@ -1,8 +1,18 @@
 package com.karnali.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-public class District {
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+public class Districts {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
