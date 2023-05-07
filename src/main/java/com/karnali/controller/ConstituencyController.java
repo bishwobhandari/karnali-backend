@@ -22,6 +22,11 @@ public class ConstituencyController {
        return constituencyRepository.findByDistrictId(id);
     }
 
+    @GetMapping("/all")
+    public List<Constituency> getAllConstituencies(){
+        return constituencyRepository.findAll();
+    }
+
 
 
 
